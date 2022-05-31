@@ -7,7 +7,6 @@ class PopOnEmptyStackException
     }
 }
 
-
 public class DefensiveProgrammingStack<T> {
     LinkedList<T> stack;
     int maxSize;
