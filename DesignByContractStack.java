@@ -4,16 +4,16 @@ public class DesignByContractStack<T> {
     LinkedList<T> stack;
     int maxSize;
 
+    public DesignByContractStack(int maxSize){
+        this.maxSize = maxSize;
+    }
+
     public boolean isFull(){
         return (stack.size() == maxSize);
     }
 
     public boolean isEmpty(){
         return (stack.size() == 0);
-    }
-
-    public DesignByContractStack(int maxSize){
-        this.maxSize = maxSize;
     }
 
     public void push(T element){
